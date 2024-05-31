@@ -1,0 +1,288 @@
+html {
+  scroll-behavior: smooth;
+}
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2s both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2s both;
+}
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+.focus-in-expand {
+	-webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(../images/backgrnd.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header {
+  align-self: center;
+    height: 950px;
+    width: 100%;
+}
+.title {
+  font-size: 4rem;
+  font-weight: 500;
+  color: white;
+}
+.explanation {
+  color: white;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+.signature {
+  font-weight: 300;
+  font-size: 1rem;
+  color: black;
+  padding: 10px;
+}
+.first {
+  color:white;
+}
+.break {
+  background-color: #AF8F6F;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.to-button {
+  height: 25px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  width: 100px;
+  border: solid 1px white;
+  border-radius: 20px;
+  transition: 0.2s ease-out;
+  text-decoration: none;
+  background-color: #543310;
+}
+.to-button:hover {
+  transform: scale(1.1);
+}
+.character-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 800px;
+  gap: 20px;
+  padding-bottom: 200px;
+}
+.container {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.subtitle {
+  color: white;
+  font-weight: 500;
+}
+.book {
+  height: 450px;
+}
+.sandwich-image {
+  padding: 100px;
+  height: 300px;
+}
+.padding{
+  padding-bottom: px;
+}
+.poem-container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1600px;
+}
+.poem {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.stanza {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.stanza.show {
+  opacity: 1;
+}
+.poem-button {
+  width: 150px;
+  height: 45px;
+  text-align: center;
+}
+.epitaph-container {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dialogue-container {
+  height: 800px;
+}
+.index {
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  gap: 30px;
+}
+.buttons-home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.epitaph-explanation {
+  font-size: 2.5rem;
+}
+.epitaph-image {
+  padding: 20px;
+  height: 500px;
+}
+.start-story-button {
+  height: 50px;
+}
+#story-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#story-text {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+#choices-container button {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  width: 200px;
+  border: solid 1px white;
+  border-radius: 20px;
+  transition: 0.2s ease-out;
+  text-decoration: none;
+  background-color: #543310;
+}
+#choices-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
